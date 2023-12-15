@@ -1,9 +1,18 @@
 
 # duke
 
+<a href="https://aidangildea.github.io/duke/"><img src="man/figures/logo.png" align="right" height="113" /></a>
+
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/aidangildea/duke/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aidangildea/duke/actions/workflows/R-CMD-check.yaml)
+<a
+href="https://github.com/aidangildea/duke/actions/workflows/R-CMD-check.yaml"
+class="pkgdown-devel"><img
+src="https://github.com/aidangildea/duke/actions/workflows/R-CMD-check.yaml/badge.svg"
+alt="R-CMD-check" /></a>
+<a href="https://cran.r-project.org/package=duke"
+class="pkgdown-release"><img
+src="https://www.r-pkg.org/badges/version/duke" alt="CRAN Status" /></a>
 <!-- badges: end -->
 
 ## Overview

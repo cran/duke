@@ -32,7 +32,9 @@ test_that("appropriate fill for factors over 8-levels", {
     scale_duke_fill_discrete()
 
   correct_fill <- "#B5B5B5"
-  expect_equal(ggplot2::layer_data(p3)$fill[9], "#B5B5B5")
+
+  expect_warning(expect_equal(ggplot2::layer_data(p3)$fill[9], "#B5B5B5"))
+  # This manual palette can handle a maximum of 8 values. You have supplied 9.
 })
 
 test_that("appropriate fill for factors over 8-levels", {
@@ -44,7 +46,7 @@ test_that("appropriate fill for factors over 8-levels", {
     ggplot2::geom_bar() +
     scale_duke_fill_discrete()
 
-  expect_warning(ggplot2::ggplot_build(p4),
-                 "This manual palette can handle a maximum of 8 values. You have supplied 9.")
+  expect_warning(ggplot2::ggplot_build(p4))
+  # This manual palette can handle a maximum of 8 values. You have supplied 9.
 })
 
